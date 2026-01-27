@@ -4,6 +4,14 @@ import scissorLift from "@/assets/products/scissor-lift.jpg";
 import doubleGirderCrane from "@/assets/products/double-girder-eot-crane.jpg";
 import goliathGantryCrane from "@/assets/products/goliath-gantry-crane.jpg";
 import underhungCrane from "@/assets/products/underhung-crane.jpg";
+import handPalletTruck from "@/assets/products/hand-pallet-truck.jpg";
+import stacker from "@/assets/products/stacker.jpg";
+import hydraulicFloorCrane from "@/assets/products/hydraulic-floor-crane.jpg";
+import drumHandling from "@/assets/products/drum-handling.jpg";
+import liftTable from "@/assets/products/lift-table.jpg";
+import forklift from "@/assets/products/forklift.jpg";
+import chainHoist from "@/assets/products/chain-hoist.jpg";
+import jibCrane from "@/assets/products/jib-crane.jpg";
 
 export interface Product {
   id: string;
@@ -195,6 +203,246 @@ export const productsData: Product[] = [
       "Warehouses",
       "Paint shops",
       "Clean room facilities"
+    ]
+  },
+  {
+    id: "hand-pallet-truck",
+    title: "Hand Pallet Truck",
+    shortDescription: "Essential warehouse equipment for efficient horizontal movement of palletized goods.",
+    longDescription: "Hand Pallet Trucks are the backbone of warehouse operations, providing efficient and cost-effective horizontal transportation of palletized goods. Our range includes standard, weighing scale, and high-lift variants to suit various operational needs. Ergonomically designed for operator comfort with smooth hydraulic lifting mechanism.",
+    image: handPalletTruck,
+    features: [
+      "Ergonomic handle design",
+      "Smooth hydraulic lifting",
+      "Durable steel construction",
+      "Precision steering",
+      "Low maintenance",
+      "Various capacity options"
+    ],
+    specifications: [
+      { label: "Capacity", value: "1 - 5 Tons" },
+      { label: "Fork Length", value: "800mm - 1500mm" },
+      { label: "Lifting Height", value: "85mm - 200mm" },
+      { label: "Fork Width", value: "520mm - 685mm" },
+      { label: "Type", value: "Standard / Weighing / High-Lift" }
+    ],
+    applications: [
+      "Warehouses",
+      "Distribution centers",
+      "Retail stores",
+      "Manufacturing plants",
+      "Loading docks",
+      "Cold storage facilities"
+    ]
+  },
+  {
+    id: "electric-stacker",
+    title: "Electric Stacker",
+    shortDescription: "Battery-powered vertical lifting solution for efficient stacking and retrieval of pallets.",
+    longDescription: "Electric Stackers combine the functionality of a forklift with the maneuverability of a pallet truck. Available in walkie, rider, and reach variants, these machines are perfect for indoor warehouse operations. Battery-powered for zero emissions and quiet operation, with precise control for safe stacking at height.",
+    image: stacker,
+    features: [
+      "Battery powered operation",
+      "Zero emissions",
+      "Precise lifting control",
+      "Compact maneuvering",
+      "Ergonomic controls",
+      "Low noise operation"
+    ],
+    specifications: [
+      { label: "Capacity", value: "1 - 2 Tons" },
+      { label: "Lift Height", value: "Up to 5.5 meters" },
+      { label: "Power", value: "24V / 48V Battery" },
+      { label: "Type", value: "Walkie / Rider / Reach" },
+      { label: "Control", value: "AC Motor Drive" }
+    ],
+    applications: [
+      "Warehouses",
+      "Distribution centers",
+      "Manufacturing facilities",
+      "Retail stockrooms",
+      "Food processing",
+      "Pharmaceutical storage"
+    ]
+  },
+  {
+    id: "hydraulic-floor-crane",
+    title: "Hydraulic Floor Crane",
+    shortDescription: "Mobile workshop crane for versatile lifting and positioning of heavy machinery and components.",
+    longDescription: "Hydraulic Floor Cranes, also known as shop cranes or engine hoists, are essential tools for maintenance workshops and production floors. The telescopic boom provides adjustable reach and capacity, while the mobile base allows easy positioning. Ideal for lifting engines, motors, and heavy components during maintenance or assembly.",
+    image: hydraulicFloorCrane,
+    features: [
+      "Telescopic boom design",
+      "Adjustable capacity positions",
+      "Mobile castor wheels",
+      "Compact storage folding",
+      "Heavy-duty construction",
+      "Easy hydraulic operation"
+    ],
+    specifications: [
+      { label: "Capacity", value: "0.5 - 3 Tons" },
+      { label: "Boom Reach", value: "4 position adjustable" },
+      { label: "Max Height", value: "Up to 2.4 meters" },
+      { label: "Operation", value: "Hydraulic foot pump" },
+      { label: "Mobility", value: "4 castors with brakes" }
+    ],
+    applications: [
+      "Automotive workshops",
+      "Machinery maintenance",
+      "Production floors",
+      "Assembly stations",
+      "Tool rooms",
+      "Equipment installation"
+    ]
+  },
+  {
+    id: "drum-handling-equipment",
+    title: "Drum Handling Equipment",
+    shortDescription: "Specialized equipment for safe handling, lifting, and tilting of industrial drums and barrels.",
+    longDescription: "Our Drum Handling Equipment range provides safe and efficient solutions for lifting, moving, tilting, and dispensing from industrial drums. Available as manual or powered units, these specialized tools reduce operator strain and prevent spillage. Suitable for steel, plastic, and fiber drums in various sizes.",
+    image: drumHandling,
+    features: [
+      "360° drum rotation",
+      "Controlled tilting mechanism",
+      "Multiple drum compatibility",
+      "Secure grip design",
+      "Manual or powered options",
+      "Spill prevention features"
+    ],
+    specifications: [
+      { label: "Capacity", value: "250 - 500 kg" },
+      { label: "Drum Size", value: "210 liters (55 gallon)" },
+      { label: "Lift Height", value: "Up to 1.5 meters" },
+      { label: "Rotation", value: "360° continuous" },
+      { label: "Type", value: "Lifter / Tilter / Rotator" }
+    ],
+    applications: [
+      "Chemical plants",
+      "Oil and lubricant facilities",
+      "Food processing",
+      "Pharmaceutical manufacturing",
+      "Paint and coating industries",
+      "Hazardous material handling"
+    ]
+  },
+  {
+    id: "lift-table",
+    title: "Hydraulic Lift Table",
+    shortDescription: "Versatile lifting platform for ergonomic work positioning and material transfer operations.",
+    longDescription: "Hydraulic Lift Tables provide ergonomic lifting solutions for assembly, packaging, and material transfer operations. The scissor mechanism ensures stable, level lifting with high load capacity. Available in stationary, mobile, and tilting configurations to suit various industrial applications.",
+    image: liftTable,
+    features: [
+      "Stable scissor mechanism",
+      "Level platform lifting",
+      "High load capacity",
+      "Safety toe guards",
+      "Maintenance-free design",
+      "Multiple configurations"
+    ],
+    specifications: [
+      { label: "Capacity", value: "500 kg - 5 Tons" },
+      { label: "Platform Size", value: "Customizable" },
+      { label: "Lift Height", value: "Up to 1.7 meters" },
+      { label: "Power", value: "Electric / Hydraulic" },
+      { label: "Type", value: "Fixed / Mobile / Tilting" }
+    ],
+    applications: [
+      "Assembly lines",
+      "Packaging stations",
+      "Loading docks",
+      "Die handling",
+      "Ergonomic workstations",
+      "Material transfer"
+    ]
+  },
+  {
+    id: "forklift",
+    title: "Forklift Truck",
+    shortDescription: "Powerful industrial vehicle for lifting, moving, and stacking heavy loads in warehouses and yards.",
+    longDescription: "Forklift Trucks are the workhorses of material handling, capable of lifting, moving, and stacking heavy palletized loads efficiently. Our range includes diesel, electric, and LPG powered models in various capacities. Designed for demanding industrial environments with robust construction and operator comfort.",
+    image: forklift,
+    features: [
+      "High lifting capacity",
+      "Multiple power options",
+      "Robust construction",
+      "Operator comfort cabin",
+      "Excellent visibility",
+      "Low maintenance design"
+    ],
+    specifications: [
+      { label: "Capacity", value: "1.5 - 10 Tons" },
+      { label: "Lift Height", value: "Up to 6 meters" },
+      { label: "Power", value: "Diesel / Electric / LPG" },
+      { label: "Mast Type", value: "Duplex / Triplex" },
+      { label: "Transmission", value: "Automatic / Manual" }
+    ],
+    applications: [
+      "Warehouses",
+      "Container yards",
+      "Manufacturing plants",
+      "Lumber yards",
+      "Steel stockyards",
+      "Distribution centers"
+    ]
+  },
+  {
+    id: "electric-chain-hoist",
+    title: "Electric Chain Hoist",
+    shortDescription: "Compact and reliable lifting solution for precise material handling in workshops and production lines.",
+    longDescription: "Electric Chain Hoists provide reliable vertical lifting in a compact package. The load chain design offers precise control and durability, making these hoists ideal for production lines, assembly operations, and workshop applications. Available with various trolley options for horizontal movement along beams.",
+    image: chainHoist,
+    features: [
+      "Compact design",
+      "Precise speed control",
+      "Durable load chain",
+      "Overload protection",
+      "Low headroom option",
+      "Pendant or radio control"
+    ],
+    specifications: [
+      { label: "Capacity", value: "0.25 - 5 Tons" },
+      { label: "Lifting Speed", value: "Single / Dual speed" },
+      { label: "Duty Class", value: "M3 to M5" },
+      { label: "Standards", value: "IS 3938" },
+      { label: "Control", value: "Pendant / Radio Remote" }
+    ],
+    applications: [
+      "Assembly lines",
+      "Workshops",
+      "Production floors",
+      "Maintenance bays",
+      "Loading areas",
+      "Tool rooms"
+    ]
+  },
+  {
+    id: "jib-crane",
+    title: "Jib Crane",
+    shortDescription: "Floor or wall mounted crane providing 180° to 360° rotation for localized material handling.",
+    longDescription: "Jib Cranes provide efficient point-to-point material handling within a defined work area. Available as pillar mounted (360° rotation) or wall mounted (180° rotation) configurations. Perfect for machine loading, assembly operations, and workstation material handling where overhead cranes are not practical.",
+    image: jibCrane,
+    features: [
+      "360° or 180° rotation",
+      "Floor or wall mounting",
+      "Manual or motorized slew",
+      "Various boom lengths",
+      "Space efficient design",
+      "Easy installation"
+    ],
+    specifications: [
+      { label: "Capacity", value: "0.25 - 5 Tons" },
+      { label: "Boom Length", value: "Up to 8 meters" },
+      { label: "Rotation", value: "180° / 360°" },
+      { label: "Mounting", value: "Pillar / Wall / Ceiling" },
+      { label: "Slewing", value: "Manual / Motorized" }
+    ],
+    applications: [
+      "Machine loading",
+      "Assembly workstations",
+      "Loading docks",
+      "Maintenance areas",
+      "Die and mold handling",
+      "Workshop applications"
     ]
   }
 ];
