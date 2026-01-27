@@ -1,6 +1,9 @@
 import singleGirderCrane from "@/assets/products/single-girder-eot-crane.jpg";
 import electricWireRopeHoist from "@/assets/products/electric-wire-rope-hoist.jpg";
 import scissorLift from "@/assets/products/scissor-lift.jpg";
+import doubleGirderCrane from "@/assets/products/double-girder-eot-crane.jpg";
+import goliathGantryCrane from "@/assets/products/goliath-gantry-crane.jpg";
+import underhungCrane from "@/assets/products/underhung-crane.jpg";
 
 export interface Product {
   id: string;
@@ -102,6 +105,96 @@ export const productsData: Product[] = [
       "Construction sites",
       "Film and television",
       "Indoor and outdoor decoration"
+    ]
+  },
+  {
+    id: "double-girder-eot-crane",
+    title: "Double Girder EOT Crane",
+    shortDescription: "Heavy-duty industrial powerhouse designed for the most demanding lifting applications.",
+    longDescription: "Our Double Girder EOT Cranes are engineered to handle the most demanding industrial lifting applications. With dual main beams, these cranes offer superior stability and maximum load capacity, making them ideal for heavy manufacturing, steel plants, and infrastructure projects. Built for continuous heavy-duty operation with exceptional durability.",
+    image: doubleGirderCrane,
+    features: [
+      "Maximum capacity",
+      "Superior stability",
+      "Long working life",
+      "Industrial grade",
+      "Heavy-duty construction",
+      "Precision control systems"
+    ],
+    specifications: [
+      { label: "Capacity", value: "10 - 200 Tons" },
+      { label: "Span", value: "Up to 35 meters" },
+      { label: "Lifting Height", value: "As per requirement" },
+      { label: "Duty Class", value: "M5 to M8" },
+      { label: "Control", value: "Cabin / Radio Remote" }
+    ],
+    applications: [
+      "Steel plants",
+      "Heavy engineering works",
+      "Power plants",
+      "Foundries",
+      "Shipyards",
+      "Infrastructure projects"
+    ]
+  },
+  {
+    id: "goliath-gantry-crane",
+    title: "Goliath / Gantry Crane",
+    shortDescription: "Massive outdoor cranes designed for handling heavy loads in open yards, ports, and construction sites.",
+    longDescription: "Goliath and Gantry Cranes are robust outdoor lifting solutions designed for heavy-duty applications in open environments. These cranes travel on ground-level rails, eliminating the need for building-mounted runways. Ideal for shipyards, container terminals, precast yards, and large construction projects where overhead support structures are not feasible.",
+    image: goliathGantryCrane,
+    features: [
+      "Ground-level operation",
+      "No building support required",
+      "Heavy load capacity",
+      "Outdoor weather resistant",
+      "Long span capability",
+      "Robust construction"
+    ],
+    specifications: [
+      { label: "Capacity", value: "20 - 500 Tons" },
+      { label: "Span", value: "Up to 50 meters" },
+      { label: "Lifting Height", value: "As per requirement" },
+      { label: "Duty Class", value: "M5 to M8" },
+      { label: "Control", value: "Cabin / Radio Remote" }
+    ],
+    applications: [
+      "Shipyards",
+      "Container terminals",
+      "Precast concrete yards",
+      "Steel stockyards",
+      "Power plant construction",
+      "Heavy equipment assembly"
+    ]
+  },
+  {
+    id: "underhung-crane",
+    title: "Underhung / Under Running Crane",
+    shortDescription: "Space-saving crane solution that runs on the bottom flange of runway beams, maximizing floor space utilization.",
+    longDescription: "Underhung or Under Running Cranes are specially designed to operate on the bottom flange of runway beams, providing maximum headroom and floor space utilization. These cranes are perfect for facilities with limited overhead clearance or where column-free floor space is critical. Ideal for assembly lines, machine shops, and maintenance areas.",
+    image: underhungCrane,
+    features: [
+      "Maximum headroom utilization",
+      "Space-saving design",
+      "Flexible runway layout",
+      "Smooth operation",
+      "Easy installation",
+      "Cost-effective solution"
+    ],
+    specifications: [
+      { label: "Capacity", value: "0.5 - 10 Tons" },
+      { label: "Span", value: "Up to 20 meters" },
+      { label: "Lifting Height", value: "As per requirement" },
+      { label: "Duty Class", value: "M3 to M5" },
+      { label: "Control", value: "Pendant / Radio Remote" }
+    ],
+    applications: [
+      "Assembly lines",
+      "Machine shops",
+      "Maintenance areas",
+      "Warehouses",
+      "Paint shops",
+      "Clean room facilities"
     ]
   }
 ];
