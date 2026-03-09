@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import hoistImage from "@/assets/products/electric-wire-rope-hoist.jpg";
 
 const solutions = [
   {
@@ -9,7 +10,7 @@ const solutions = [
   {
     id: "hoists",
     title: "Hoist",
-    image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=500&h=400&fit=crop",
+    image: hoistImage,
   },
   {
     id: "material-handling",
