@@ -24,22 +24,26 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (234) 567-890", "+1 (234) 567-891"],
+      details: ["9310167073", "9319197973"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@continentalcranes.com", "sales@continentalcranes.com"],
+      details: ["cranescontinental@gmail.com"],
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Industrial Boulevard", "Houston, TX 77001"],
+      details: [
+        "Continental Cranes and Hydraulics",
+        "Plot No-RE111, Sector-68, Industrial Model Town, Faridabad, Haryana, PIN-121004",
+        "Landmark: Machgar Road Behind Navyug Public School",
+      ],
     },
     {
       icon: Clock,
-      title: "Working Hours",
-      details: ["Mon - Fri: 7:00 AM - 6:00 PM", "Emergency: 24/7 Available"],
+      title: "GSTIN",
+      details: ["06EVIPS1005L2ZF"],
     },
   ];
 
@@ -86,21 +90,6 @@ const ContactSection = () => {
                 ))}
               </div>
 
-              {/* Social links */}
-              <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-                <p className="text-sm text-primary-foreground/60 mb-4">Follow us on social media</p>
-                <div className="flex gap-4">
-                  {["LinkedIn", "Twitter", "Facebook"].map((social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors"
-                    >
-                      <span className="text-xs font-bold">{social[0]}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 
