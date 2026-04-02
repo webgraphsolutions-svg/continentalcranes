@@ -52,18 +52,6 @@ const Footer = () => {
               With over 25 years of experience, we deliver safe, efficient, and 
               reliable services for projects of all scales.
             </p>
-            <div className="flex gap-4">
-              {["LinkedIn", "Twitter", "Facebook", "YouTube"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors"
-                  aria-label={social}
-                >
-                  <span className="text-xs font-bold">{social[0]}</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Services */}

@@ -24,22 +24,26 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (234) 567-890", "+1 (234) 567-891"],
+      details: ["9310167073", "9319197973"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@continentalcranes.com", "sales@continentalcranes.com"],
+      details: ["cranescontinental@gmail.com"],
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Industrial Boulevard", "Houston, TX 77001"],
+      details: [
+        "Continental Cranes and Hydraulics",
+        "Plot No-RE111, Sector-68, Industrial Model Town, Faridabad, Haryana, PIN-121004",
+        "Landmark: Machgar Road Behind Navyug Public School",
+      ],
     },
     {
       icon: Clock,
-      title: "Working Hours",
-      details: ["Mon - Fri: 7:00 AM - 6:00 PM", "Emergency: 24/7 Available"],
+      title: "GSTIN",
+      details: ["06EVIPS1005L2ZF"],
     },
   ];
 
