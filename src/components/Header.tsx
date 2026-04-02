@@ -80,7 +80,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border">
                 <a href="tel:+919310167073" className="flex items-center gap-2 text-muted-foreground mb-4">
                   <Phone className="w-4 h-4" />
-                  <span>+1 (234) 567-890</span>
+                  <span>9310167073, 9319197973</span>
                 </a>
                 <Button variant="default" className="w-full bg-secondary text-secondary-foreground">
                   Get a Quote

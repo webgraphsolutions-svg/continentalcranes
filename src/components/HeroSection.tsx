@@ -63,14 +63,6 @@ const HeroSection = () => {
               Get Customized Quote
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8"
-            >
-              <Play className="mr-2 w-5 h-5" />
-              View Specifications
-            </Button>
           </div>
         </div>
 
