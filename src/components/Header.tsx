@@ -1,25 +1,48 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#about" },
     { name: "Products", href: "/products" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Industries", href: "#industries" },
-    { name: "Contact", href: "#contact" },
+    { name: "Solutions", href: "/#solutions" },
+    { name: "Industries", href: "/#industries" },
+    { name: "Contact", href: "/#contact" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const hash = href.substring(1); // e.g. "#home"
+      if (location.pathname === "/") {
+        // Already on homepage, just scroll
+        const el = document.querySelector(hash);
+        el?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Navigate to homepage then scroll
+        navigate("/" + hash);
+      }
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
+          <a
+            href="/"
+            onClick={(e) => { e.preventDefault(); navigate("/"); }}
+            className="flex items-center gap-2"
+          >
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xl">CC</span>
             </div>
@@ -35,6 +58,7 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-muted-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.name}
@@ -71,7 +95,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="text-foreground hover:text-primary transition-colors font-medium py-2"
                 >
                   {link.name}
