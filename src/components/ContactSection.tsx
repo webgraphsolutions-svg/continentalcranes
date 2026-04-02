@@ -90,21 +90,6 @@ const ContactSection = () => {
                 ))}
               </div>
 
-              {/* Social links */}
-              <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-                <p className="text-sm text-primary-foreground/60 mb-4">Follow us on social media</p>
-                <div className="flex gap-4">
-                  {["LinkedIn", "Twitter", "Facebook"].map((social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-colors"
-                    >
-                      <span className="text-xs font-bold">{social[0]}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 
