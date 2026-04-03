@@ -1,4 +1,6 @@
 import { ArrowUp } from "lucide-react";
+import logoImg from "@/assets/logo.jpeg";
+import globalPresence from "@/assets/global-presence.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
