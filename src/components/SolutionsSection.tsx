@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import hoistImage from "@/assets/products/electric-wire-rope-hoist.jpg";
 import servicesImage from "@/assets/products/services.jpeg";
 import overheadCraneImage from "@/assets/products/overhead-crane.jpg";
+import otherMaterialImage from "@/assets/products/other-material-handling.jpeg";
 
 const solutions = [
   {
@@ -17,7 +18,7 @@ const solutions = [
   {
     id: "material-handling",
     title: "Other Material Handling Equipment",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=400&fit=crop",
+    image: otherMaterialImage,
   },
   {
     id: "services",
