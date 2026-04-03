@@ -107,7 +107,14 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Global Presence */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex justify-center">
+            <img src={globalPresence} alt="Our Global Presence" className="max-w-2xl w-full rounded-lg" />
+          </div>
+        </div>
+      </div>
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
