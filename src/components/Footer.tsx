@@ -41,9 +41,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-xl">CC</span>
-              </div>
+              <img src={logoImg} alt="Continental Cranes & Hydraulics" className="w-10 h-10 rounded-lg object-contain bg-white" />
               <div>
                 <span className="font-bold text-lg">Continental</span>
                 <span className="font-bold text-lg text-secondary ml-1">Cranes</span>

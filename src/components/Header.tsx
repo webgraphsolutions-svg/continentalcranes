@@ -44,9 +44,7 @@ const Header = () => {
             onClick={(e) => { e.preventDefault(); navigate("/"); }}
             className="flex items-center gap-2"
           >
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">CC</span>
-            </div>
+            <img src={logoImg} alt="Continental Cranes & Hydraulics" className="w-10 h-10 rounded-lg object-contain" />
             <div className="hidden sm:block">
               <span className="font-bold text-lg text-foreground">Continental</span>
               <span className="font-bold text-lg text-primary ml-1">Cranes</span>
