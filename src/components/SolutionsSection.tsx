@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import hoistImage from "@/assets/products/electric-wire-rope-hoist.jpg";
 import servicesImage from "@/assets/products/services.jpeg";
 import overheadCraneImage from "@/assets/products/overhead-crane.jpg";
+import otherMaterialImage from "@/assets/products/other-material-handling.jpeg";
 
 const solutions = [
   {
