@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import hoistImage from "@/assets/products/electric-wire-rope-hoist.jpg";
+import servicesImage from "@/assets/products/services.jpeg";
 import overheadCraneImage from "@/assets/products/overhead-crane.jpg";
 
 const solutions = [
@@ -21,7 +22,7 @@ const solutions = [
   {
     id: "services",
     title: "Services",
-    image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=500&h=400&fit=crop",
+    image: servicesImage,
   },
 ];
 
