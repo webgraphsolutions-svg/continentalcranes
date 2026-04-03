@@ -1,4 +1,6 @@
 import { ArrowUp } from "lucide-react";
+import logoImg from "@/assets/logo.jpeg";
+import globalPresence from "@/assets/global-presence.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,9 +41,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-xl">CC</span>
-              </div>
+              <img src={logoImg} alt="Continental Cranes & Hydraulics" className="w-10 h-10 rounded-lg object-contain bg-white" />
               <div>
                 <span className="font-bold text-lg">Continental</span>
                 <span className="font-bold text-lg text-secondary ml-1">Cranes</span>
@@ -107,7 +107,14 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Global Presence */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex justify-center">
+            <img src={globalPresence} alt="Our Global Presence" className="max-w-2xl w-full rounded-lg" />
+          </div>
+        </div>
+      </div>
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
